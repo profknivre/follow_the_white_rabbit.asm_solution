@@ -1,3 +1,5 @@
+;; https://gist.github.com/ooKu9yaiV4a/c7463504f1dba1e6bb1681f179dc7b59
+
 [bits 64]
 [org 0x10000]
 _:
