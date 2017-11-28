@@ -19,7 +19,7 @@ int main(int argc ,char **argv)
 {
 	func_t func;
 	void *mem = mmap((void*)0x10000,4096,PROT_READ|PROT_WRITE|PROT_EXEC,MAP_PRIVATE|MAP_ANONYMOUS,0,0);
-	memset(mem,0xcc,zonk_len); // insert a lot of breakpoints :D
+	memset(mem,0xcc,4096); // insert a lot of breakpoints :D
 
 	printf("addr: %p\n",mem);
 	memcpy(mem,zonk,zonk_len);
